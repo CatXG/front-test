@@ -1,0 +1,292 @@
+/* 基础设置 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.flexbox {  /* 浮动盒子 */
+    display: flex;
+    justify-content: space-between;  /*主轴方向撑开*/
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+    /* 轮播图左右按钮基础样式 */
+.swiperbtn{
+    position: absolute;
+    top: 140px;
+    width: 35px;
+    height: 70px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 28px;
+    z-index: 2;
+    cursor: default;
+}
+
+/*顶部导航栏strat*/
+.topbar {
+    height: 80px;
+}
+
+.topbar>div.flexbox {
+    height: 80px;
+}
+
+    /*顶部导航栏右侧样式*/
+.topmenu{
+    height: 80px;
+}
+
+.topmenu>img {
+    width: 17px;
+    height: 17px;
+    padding: 15px;
+}
+
+/*顶部导航栏end*/
+
+/* 中间主要内容区域start */
+.midcontent {
+    background-color: #eaf3fb;
+}
+    /*导航栏部分*/
+.nav {
+    height: 100px;
+    margin: 10px 0;
+}
+.navcontent>span {
+    font-size: 28px;
+    color: rgb(84, 84, 84);
+}
+.navcontent>p {
+    font-size: 12px;
+    color: rgb(142, 140, 140);
+}
+.navtitle {
+    position: relative;
+}
+.navtitle>ul>li {
+    position: relative;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    font-size: 12px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.navtitle ul .navbox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px ;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgb(215, 213, 213);
+    transition: 0.5s;
+}
+
+.navtitle ul .navboxclick{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px ;
+    height: 5px;
+    border-radius: 3px;
+    background-color: rgb(184, 182, 182);
+    transition: 0.5s;
+}
+
+
+    /*中间顶部区域*/
+.midtop {
+    margin: 10px 0;
+}
+.mtitem {
+    background-color: white;
+    width:580px ;
+    height: 300px;
+}
+    /* 左侧轮播图start */
+.mtleft {
+    position: relative;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.mtleft div.boxleft{
+    left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.mtleft div.boxright{    
+    right: 10px;
+    border-radius: 5px 0 0 5px;   
+}
+
+.mtleft .boxleft:hover,.boxright:hover{
+    background-color: rgba(95, 94, 94, 0.8);
+    color:rgb(203, 4, 4);
+}
+
+.mtleft img {
+    width:560px;
+    height: 280px;
+}
+
+.mtleft ul.swiperimg {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+ul.swiperimg li {
+    padding:10px;
+}
+
+
+
+.mtleft ol.circle {
+    position: absolute;
+    right: 274px;
+    bottom: 20px;
+}
+
+ol.circle>li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgb(176, 176, 176);
+}
+
+ol.circle>li:hover {
+    background-color: rgb(222, 90, 90);
+}
+
+ol.circle .selected {
+    background-color: rgb(222, 90, 90);
+}
+
+    /* 左侧轮播图end */
+
+.mtright {
+    height: 300px;
+    margin-left: 10px;
+}
+.mtright div.mtrbox {
+    height: 35%;
+    font-size: 20px;
+    color: gray;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+.mtright div.mtrbox div.btn {
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 2px solid rgb(189, 189, 189);
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.mtright .mtrtable{
+    width: 100%;
+    height: 60%;
+}
+.mtright .mtrtable>table{
+    width: 100%;
+}
+.mtright .mtrtable>table thead{
+    height: 70px;
+    line-height: 70px;
+    font-weight: bolder;
+}
+.mtright .mtrtable table tbody tr {
+    height: 50px;
+    line-height: 50px;
+}
+.mtrtable .isbtn{
+    display: inline-block;
+    background-color: rgb(55, 178, 55);
+    border-radius: 5px;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: white;
+    font-weight: bolder;
+}
+
+/* 中间主要内容区域end */
+
+/* 中间Echarts图  */
+.midbody {
+    height: 380px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.midfoot {
+    height: 380px;
+    padding-bottom: 40px;
+}
+.midfitem {
+    width: 49%;
+    height: 380px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* 页面底部区域 */
+
+.foot {
+    height: 200px;
+    background-color: rgba(25, 25, 25, 0.885);
+
+}
+
+.fcontent{
+    height: 200px;
+    display: flex;
+    position: relative;
+    /* line-height: 170px; */
+}
+.fboxplace {
+    position: absolute;
+    top: 50px;
+}
+.fcontent div.ftricont{
+    left: 100px;  
+    padding: 0 80px;
+    display: flex;
+}
+
+.ftricont ul li {
+    width: 140px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.ftricont ul li>a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+

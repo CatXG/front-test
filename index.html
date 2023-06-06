@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天峰科技前端测试</title>
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入JS代码 -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/request.js"></script>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topbar">
+        <!-- 版心部分 -->
+        <div class="container flexbox">
+            <div class="logo">LOGO</div>
+            <div class="topmenu flexbox">
+                <img src="./images/topbar_设置.png" alt="设置按钮">
+                <img src="./images/topbar_消息.png" alt="消息按钮">
+                <div class="logo">
+                    Log Out
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 中间主要内容区域 -->
+    <div class="midcontent">
+        <!-- 版心 -->
+        <div class="container">
+            <!-- 中间头部nav导航栏区域 -->
+            <div class="flexbox nav">
+                <div class="navcontent">
+                    <span>Audience Overview</span>
+                    <p>Roseville, CA</p>
+                </div>
+                <div class="navtitle">
+                    <ul id='thenav' class="flexbox">
+                        <li onclick="clinav(1)" >DASHBOARD</li>
+                        <li onclick="clinav(2)" >PROJECTS</li>
+                        <li onclick="clinav(3)" >CALENDAR</li>
+                        <li onclick="clinav(4)" >MAILBOX</li>
+                        <li onclick="clinav(5)" >SETTINGS</li>
+                        <div id="navbox" class="navbox"></div>
+                        <div id="slider"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 中间顶部 -->
+            <div class="flexbox midtop">
+                <!-- 左侧轮播图区域 -->
+                <div class="mtleft mtitem">
+                    <!-- 轮播图按钮区 -->
+                    <div class="boxleft swiperbtn">&lt;</div>
+                    <div class="boxright swiperbtn">&gt;</div>
+                    <!-- 轮播图片区域 -->
+                    <ul class="swiperimg">
+                        <li><img src="./images/nav01.png"></li>
+                        <li><img src="./images/nav02.jpg"></li>
+                        <li><img src="./images/nav03.jpg"></li>
+                        <li><img src="./images/nav04.jpg"></li>
+
+                    </ul>
+                    <!-- 轮播图底部标点 -->
+                    <ol class="circle flexbox"></ol>
+                </div>
+                <div class="mtright mtitem">
+
+                    <div class="mtrbox flexbox">
+                        <div>Support Requests</div>
+                        <div><div class="btn">View All</div></div>
+                    </div>
+                    <div class="mtrtable">
+                        <table >
+                            <thead>
+                                <tr>
+                                    <th>TIME</th>
+                                    <th>USER NAME</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>9:45pm</th>
+                                    <th>info@design.com</th>
+                                    <th><div class="isbtn">Solved</div></th>
+                                </tr>
+                                <tr>
+                                    <th>9:45pm</th>
+                                    <th>info@design.com</th>
+                                    <th><div class="isbtn">Solved</div></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <!-- 中间中部图表区 -->
+            <div id="midbody" class="midbody" ></div>
+            <!-- 中间底部 -->
+            <div class="flexbox midfoot">
+                <div id="midfpie" class="midfitem"></div>
+                <div id="midfbar" class="midfitem"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 底部区域 -->
+    <div class="foot">
+        <!-- 版心 -->
+        <div class="container ">
+            <div class="fcontent">
+                <div class="logo fboxplace">LOGO</div>
+                <div class="ftricont fboxplace">
+                    <ul class="ftitem">
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">CHANNELS</a></li>
+                        <li><a href="#">OVERVIEW</a></li>
+                        <li><a href="#">TIMELINE</a></li>
+                    </ul>
+                    <ul class="ftitem">
+                        <li><a href="#">SPORT</a></li>
+                        <li><a href="#">CULTURE</a></li>
+                        <li><a href="#">NATURE</a></li>
+                        <li><a href="#">MUSIC</a></li>
+                    </ul>
+                    <ul class="ftitem">
+                        <li><a href="#">WEATHER</a></li>
+                        <li><a href="#">AUTOS</a></li>
+                        <li><a href="#">LOCAL<a></li>
+                        <li><a href="#">SHOP</a></li>
+                    </ul>
+                    <ul class="ftitem">
+                        <li><a href="#">FUTURE</a></li>
+                        <li><a href="#">FOOD</a></li>
+                        <li><a href="#">EARTH</a></li>
+                        <li><a href="#">TV</a></li>
+                    </ul>
+                    <ul class="ftitem">
+                        <li><a href="#">TRAVEL</a></li>
+                        <li><a href="#">RADIO</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
